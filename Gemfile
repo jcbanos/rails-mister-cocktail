@@ -67,3 +67,6 @@ gem 'simple_form'
 #Protection
 
 gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'cloudinary', '~> 1.12.0'
+
