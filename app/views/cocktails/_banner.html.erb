@@ -1,0 +1,8 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
+  <div class="container">
+    <h1 class= "mb-3"><%= cocktail.name %></h1>
+    <%= link_to new_cocktail_dose_path(cocktail.id) do%>
+      <h3 class="btn btn-primary" href="">Add a new dose</h3>
+    <% end %>
+  </div>
+</div>

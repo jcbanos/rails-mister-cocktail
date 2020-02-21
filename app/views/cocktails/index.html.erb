@@ -1,0 +1,11 @@
+<%= render 'components/banner' %>
+
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+        <div class="col-4">
+          <%= render "cocktails/card", cocktail: cocktail %>
+        </div>
+    <% end %>
+  </div>
+</div>

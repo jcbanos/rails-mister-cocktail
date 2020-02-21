@@ -1,0 +1,8 @@
+<%= render "cocktails/banner", cocktail: @cocktail %>
+<% @cocktail.doses.each do |dose| %>
+  <ul style = "list-style: none">
+    <li>Dose</li>
+      <li>Description: <%=dose.description%> <%= link_to cocktail_dose_path(dose), method: :delete do %><i class="fas fa-trash"></i><% end %></li>
+      <li>Ingredient: <%=dose.ingredient.name%></li>
+  </ul>
+<% end %>
